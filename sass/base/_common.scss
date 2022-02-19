@@ -1,0 +1,21 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--prim-text-color);
+  background-color: var(--prim-backg-color);
+}
+
+button {
+  cursor: pointer;
+}
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
