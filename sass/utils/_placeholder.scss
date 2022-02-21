@@ -3,27 +3,3 @@
   display: flex;
   align-items: center;
 }
-// @extend %section;
-%section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-// @extend %container;
-%container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-// @extend %list;
-%list {
-  list-style: none;
-}
-// %section-title {
-// @include font(null, 36px, 42px, 0.03em);
-//   font-size: 36px;
-//   line-height: calc(42 / 36);
-//   letter-spacing: 0.03em;
-//   text-align: center;
-//   color: var(--title-text-color);
-// }
