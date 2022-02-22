@@ -4,9 +4,18 @@
   padding-bottom: 60px;
 }
 .container--flex {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    align-items: baseline;
+  }
 }
+
 /* logo */
 .container-logoadd {
   flex-grow: 1;
@@ -85,11 +94,20 @@
   width: 570px;
 }
 .form-input {
-  display: inline-flex;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 .form-input__label {
 }
 .form-input__item {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+  }
+
   font-size: 16px;
   height: 50px;
   border-radius: 4px;
