@@ -446,8 +446,16 @@ ul {
   }
 }
 
-.section--no-padding {
-  padding-top: 0;
+@media screen and (max-width: 1199px) {
+  .section--no-padding {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section--no-padding {
+    padding-top: 0;
+  }
 }
 
 .development-list {
@@ -456,9 +464,9 @@ ul {
 }
 
 .development-list__item {
+  position: relative;
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
-  position: relative;
 }
 
 .development__box {
