@@ -814,18 +814,25 @@ ul {
 }
 
 .filter {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -8px;
+  margin-bottom: 25px;
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
 }
 
 .filter__btn {
+  margin-left: 8px;
+  margin-bottom: 15px;
   padding: 6px 22px;
   font-family: inherit;
+  white-space: nowrap;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -847,10 +854,23 @@ ul {
 }
 
 .project {
-  display: flex;
-  margin-left: -30px;
   margin-bottom: -30px;
-  flex-wrap: wrap;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project {
+    max-width: 1200px;
+  }
 }
 
 .project__item {
