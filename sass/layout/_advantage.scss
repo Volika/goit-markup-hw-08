@@ -1,17 +1,16 @@
 .advantage-list {
-  max-width: 450px;
+  max-width: 480px;
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
-    max-width: 738px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 1170px;
-  }
-  @media screen and (min-width: 768px) {
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
+    margin-left: -30px;
   }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
   // display: flex;
   // justify-content: space-between;
   // &__item + &__item {
