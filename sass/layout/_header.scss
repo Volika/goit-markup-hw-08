@@ -7,19 +7,19 @@
   position: relative;
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mob) {
   }
 }
 .site-nav {
   @include font(500, 14px, 16px, 0.02em);
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
+  display: none;
+
+  @media screen and (min-width: $tab) {
+    display: contents;
     margin-left: 88px;
     display: flex;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desk) {
     margin-left: 93px;
   }
 
@@ -53,13 +53,14 @@
 }
 .connect {
   @include font(500, 12px, 14px, 0.02em);
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
+  display: none;
+
+  @media screen and (min-width: $tab) {
+    display: contents;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+
     width: 100%;
     margin-right: auto;
     margin-left: 84px;
@@ -72,37 +73,37 @@
       }
     }
     &__icon {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tab) {
         margin-right: 8px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desk) {
         margin-right: 10px;
       }
 
       fill: currentColor;
       &--env {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tab) {
           width: 14px;
           height: 10px;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desk) {
           width: 16px;
           height: 12px;
         }
       }
       &--smart {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tab) {
           width: 10px;
           height: 14px;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desk) {
           width: 10px;
           height: 16px;
         }
       }
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desk) {
     @include font(500, 14px, 16px, 0.02em);
     margin-left: 300px;
     flex-direction: row;
@@ -113,7 +114,7 @@
   }
 }
 .menu-btn {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     display: none;
   }
 }

@@ -1,8 +1,8 @@
 .section--no-padding {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
+  display: none;
+
+  @media screen and (min-width: $desk) {
+    display: contents;
     padding-top: 0;
   }
 }

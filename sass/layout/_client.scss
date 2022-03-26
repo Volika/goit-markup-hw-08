@@ -1,14 +1,14 @@
 .client {
-  max-width: 480px;
+  max-width: $mob;
   margin-bottom: -30px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  @media screen and (min-width: $tab) {
+    max-width: $tab;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+  @media screen and (min-width: $desk) {
+    max-width: $desk;
   }
 }
 .client__item {
@@ -19,11 +19,11 @@
   & + & {
     margin-left: 30px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     width: calc(100% / 3 - 30px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desk) {
     width: calc(100% / 6 - 30px);
   }
   /* width: calc(100% / 6 - 30px); */

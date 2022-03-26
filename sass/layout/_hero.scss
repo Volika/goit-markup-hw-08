@@ -1,7 +1,7 @@
 .hero {
   // @extend %container;
   background-color: var(--dark-backg-color);
-  max-width: 480px;
+  max-width: $mob;
   @include indents(118px, 0, auto, auto);
   background-image: linear-gradient(
       to right,
@@ -13,8 +13,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  @media screen and (min-width: $tab) {
+    max-width: $tab;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -22,7 +22,7 @@
       ),
       url('../images/hero-768_400.jpg');
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desk) {
     max-width: 1600px;
     @include indents(200px, 0, auto, auto);
     background-image: linear-gradient(
