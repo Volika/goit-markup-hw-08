@@ -698,6 +698,12 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .container__item {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container__item {
     text-align: left;
@@ -752,6 +758,7 @@ ul {
   .container-links {
     margin-left: 70px;
     margin-right: 93px;
+    width: 206px;
   }
 }
 
@@ -808,6 +815,8 @@ ul {
 
 .container-email {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -837,13 +846,25 @@ ul {
   margin-right: auto;
   width: 100%;
   height: 100%;
+  margin-bottom: 20px;
   font-size: 16px;
   height: 50px;
   border-radius: 4px;
   background-color: transparent;
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: border-color 500ms;
+}
+
+@media screen and (min-width: 480px) {
+  .form-input__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input__item {
+    width: 358px;
+  }
 }
 
 .form-input__item::placeholder {
@@ -862,7 +883,15 @@ ul {
 
 .form-input__btn {
   padding: 10px 28px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input__btn {
+    padding: 10px 28px;
+    margin-left: 12px;
+  }
 }
 
 .icon-send {
