@@ -6,13 +6,13 @@
 
   // outline: 1px solid red;
 
-  @include mob {
+  @include media($mob) {
     width: $mob;
   }
-  @include tab {
+  @include media($tab) {
     width: $tab;
   }
-  @include desk {
+  @include media($desk) {
     width: $desk;
   }
 }

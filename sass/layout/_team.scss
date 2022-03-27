@@ -5,25 +5,25 @@
 .team {
   max-width: 480px;
   margin-bottom: -30px;
-  @include tab {
+  @include media($tab) {
     max-width: $tab;
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
   }
-  @include desk {
+  @include media($desk) {
     max-width: $desk;
   }
 }
 .team__item {
   margin-bottom: 30px;
-  @include tab {
+  @include media($tab) {
     width: calc(100% / 2 - 30px);
 
     margin-left: 30px;
   }
 
-  @include desk {
+  @include media($desk) {
     width: calc(100% / 4 - 30px);
   }
 

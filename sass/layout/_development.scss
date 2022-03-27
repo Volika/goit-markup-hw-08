@@ -1,7 +1,7 @@
 .section--no-padding {
   display: none;
 
-  @include desk {
+  @include media($desk) {
     display: contents;
     padding-top: 0;
   }

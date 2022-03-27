@@ -11,6 +11,12 @@
   margin-right: $mr;
 }
 
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
 @mixin mob {
   @media screen and (min-width: $mob) {
     @content;
