@@ -13,6 +13,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-480_400_2x.jpg');
+  }
+
   @include media($tab) {
     max-width: $tab;
     background-image: linear-gradient(
@@ -21,7 +32,18 @@
         rgba(47, 48, 58, 0.4)
       ),
       url('../images/hero-768_400.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero-768_400_2x.jpg');
+    }
   }
+
   @include media($desk) {
     max-width: 1600px;
     @include indents(200px, 0, auto, auto);
@@ -31,6 +53,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url('../images/hero-1600_600.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero-1600_600_2x.jpg');
+    }
   }
 }
 
