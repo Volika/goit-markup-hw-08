@@ -1,5 +1,6 @@
 .project {
-  // max-width: 480px;
+  max-width: 450px;
+  // justify-content: center;
 
   @media screen and (min-width: $tab) {
     max-width: $tab;
@@ -13,15 +14,14 @@
   }
 }
 .project__item {
-  // margin-left: 15px;
   margin-bottom: 30px;
   position: relative;
   @media screen and (min-width: $tab) {
     width: calc(100% / 2 - 30px);
+    margin-left: 30px;
   }
   @media screen and (min-width: $desk) {
     width: calc(100% / 3 - 30px);
-    margin-left: 30px;
   }
 }
 .project__card-img {
@@ -59,6 +59,12 @@
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   padding: 20px 24px;
+  @media screen and (min-width: $tab) {
+    height: 146px;
+  }
+  @media screen and (min-width: $desk) {
+    height: 110px;
+  }
 }
 
 .project__title {
