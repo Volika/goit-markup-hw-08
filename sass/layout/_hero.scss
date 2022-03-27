@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: $tab) {
+  @include tab {
     max-width: $tab;
     background-image: linear-gradient(
         to right,
@@ -22,7 +22,7 @@
       ),
       url('../images/hero-768_400.jpg');
   }
-  @media screen and (min-width: $desk) {
+  @include desk {
     max-width: 1600px;
     @include indents(200px, 0, auto, auto);
     background-image: linear-gradient(

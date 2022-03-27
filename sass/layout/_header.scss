@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 80px;
-  @media screen and (min-width: $mob) {
+  @include mob {
   }
 }
 .menu-btn {
@@ -20,7 +20,7 @@
   border: none;
   background-color: transparent;
 
-  @media screen and (min-width: $tab) {
+  @include tab {
     display: none;
   }
 }

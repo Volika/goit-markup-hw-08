@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 }
 .container--flex {
-  @media screen and (min-width: $tab) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -14,14 +14,14 @@
 .container__item {
   padding-top: 60px;
   text-align: center;
-  @media screen and (min-width: $tab) {
+  @include tab {
     width: 50%;
   }
   // @media screen and (max-width: $desk) {
   //   margin-left: auto;
   //   margin-right: auto;
   // }
-  @media screen and (min-width: $desk) {
+  @include desk {
     text-align: left;
   }
 }
@@ -29,12 +29,11 @@
 /* logo */
 .container-logoadd {
   // margin-bottom: 60px;
-  @media screen and (min-width: $mob) {
-  }
-  @media screen and (min-width: $tab) {
+
+  @include tab {
     width: 50%;
   }
-  @media screen and (min-width: $desk) {
+  @include desk {
     width: 231px;
   }
 
@@ -42,7 +41,7 @@
 }
 .container-address {
   margin-top: 20px;
-  @media screen and (min-width: $desk) {
+  @include desk {
   }
 }
 
@@ -70,7 +69,7 @@
 }
 /* container-links */
 .container-links {
-  @media screen and (min-width: $desk) {
+  @include desk {
     margin-left: 70px;
     margin-right: 93px;
     width: 206px;
@@ -86,7 +85,7 @@
 .footer-icon {
   display: flex;
   justify-content: center;
-  @media screen and (min-width: $desk) {
+  @include desk {
     justify-content: left;
   }
 }
@@ -124,16 +123,16 @@
   margin-left: auto;
   margin-right: auto;
   // height: 50px;
-  @media screen and (min-width: $mob) {
+  @include mob {
     width: 450px;
   }
-  @media screen and (min-width: $desk) {
+  @include desk {
     width: 570px;
   }
 }
 .form-input {
   display: block;
-  @media screen and (min-width: $desk) {
+  @include desk {
     display: inline-flex;
   }
 }
@@ -150,10 +149,10 @@
   height: 50px;
   border-radius: 4px;
   background-color: transparent;
-  @media screen and (min-width: $mob) {
+  @include mob {
     width: 450px;
   }
-  @media screen and (min-width: $desk) {
+  @include desk {
     width: 358px;
   }
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -175,7 +174,7 @@
 
 .form-input__btn {
   @include indents(10px, 28px, auto, auto);
-  @media screen and (min-width: $desk) {
+  @include desk {
     @include indents(10px, 28px, 12px, null);
   }
 }

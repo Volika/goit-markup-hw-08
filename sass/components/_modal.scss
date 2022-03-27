@@ -1,9 +1,9 @@
 .modal {
-  @media screen and (min-width: $mob) {
+  @include mob {
     width: 450px;
     min-height: 609px;
   }
-  @media screen and (min-width: $desk) {
+  @include desk {
     width: 528px;
     min-height: 581px;
   }

@@ -10,3 +10,20 @@
   margin-left: $ml;
   margin-right: $mr;
 }
+
+@mixin mob {
+  @media screen and (min-width: $mob) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: $tab) {
+    @content;
+  }
+}
+@mixin desk {
+  @media screen and (min-width: $desk) {
+    @content;
+  }
+}

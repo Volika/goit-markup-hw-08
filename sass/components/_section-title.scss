@@ -2,10 +2,10 @@
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
-  @media screen and (min-width: $mob) {
+  @include mob {
     @include font(700, 28px, 33px, 0.03em);
   }
-  @media screen and (min-width: $desk) {
+  @include desk {
     @include font(null, 36px, 42px, 0.03em);
   }
 }
