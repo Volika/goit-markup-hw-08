@@ -7,8 +7,25 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
   @media screen and (min-width: $mob) {
   }
+}
+.menu-btn {
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $tab) {
+    display: none;
+  }
+}
+.menu-btn__icon--close {
+  display: none;
 }
 .site-nav {
   @include font(500, 14px, 16px, 0.02em);
@@ -111,10 +128,5 @@
     &__item + &__item {
       margin-left: 30px;
     }
-  }
-}
-.menu-btn {
-  @media screen and (min-width: $tab) {
-    display: none;
   }
 }
