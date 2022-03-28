@@ -1,32 +1,41 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+  @include media($tab) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include media($desk) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 .container__header {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
+  // min-height: 80px;
   @include media($mob) {
   }
 }
-.menu-btn {
+.menu-open-btn {
   display: inline-flex;
 
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
   @include media($tab) {
     display: none;
   }
 }
-.menu-btn__icon--close {
-  display: none;
-}
+
 .site-nav {
   @include font(500, 14px, 16px, 0.02em);
   display: none;
@@ -129,4 +138,93 @@
       margin-left: 30px;
     }
   }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+  // width: 100vw;
+  // height: 100vw;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: 500;
+}
+.mob-menu-container {
+  height: 796px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-close-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-menu__link {
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+.mob-contact {
+  // margin-top: 302px;
+  display: block;
+}
+.mob-soc__item {
+  margin-top: 32;
+}
+.mob-contact__tel {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
+}
+.mob-contact__mail {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
+}
+.mob-soc {
+  margin-top: 64px;
+  display: flex;
+}
+.mob-soc__link {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mob-soc__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
