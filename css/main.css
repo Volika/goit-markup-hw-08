@@ -390,7 +390,7 @@ ul {
 }
 
 .mob-menu-container {
-  height: 796px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
