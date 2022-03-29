@@ -8,6 +8,10 @@
   margin-bottom: 40px;
   @include media($tab) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include media($desk) {
+    margin-bottom: 50px;
   }
 }
 .filter__item {
@@ -16,8 +20,13 @@
   &:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
   }
-}
 
+  @include media($tab) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 0px;
+    }
+  }
+}
 .filter__btn {
   padding: 6px 22px;
   font-family: inherit;
