@@ -446,7 +446,7 @@ ul {
 }
 
 .mob-soc__item {
-  margin-top: 32;
+  margin-top: 32px;
 }
 
 .mob-contact__tel {
@@ -1247,7 +1247,7 @@ ul {
 }
 
 .project__development {
-  font-weight: hull;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
