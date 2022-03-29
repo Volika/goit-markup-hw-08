@@ -1049,7 +1049,7 @@ ul {
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: -8px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1058,9 +1058,15 @@ ul {
   }
 }
 
-.filter__btn {
+.filter__item {
   margin-left: 8px;
+}
+
+.filter__item:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.filter__btn {
   padding: 6px 22px;
   font-family: inherit;
   white-space: nowrap;

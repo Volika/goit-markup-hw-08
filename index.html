@@ -209,22 +209,33 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="development-list">
             <li class="development-list__item">
-              <img
-                src="./images/box_1.jpg"
-                alt="Разработки для планшета"
-                scrset="./images/box_1.jpg 1x, ./images/box_1_2x.jpg 2x"
-              />
+              <picture>
+                <source
+                  srcset="./images/box_1.jpg 1x, ./images/box_1_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/box_1.jpg" alt="Разработки для планшета" />
+              </picture>
+
               <div class="development__box">
                 <p class="development__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="development-list__item">
               <div class="dev-item-container">
-                <img
-                  src="./images/box_2.jpg"
-                  alt="Разработки для мобильного телефона"
-                  scrset="./images/box_2.jpg 1x, ./images/box_2_2x.jpg 2x"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box_2.jpg 1x, ./images/box_2_2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./images/box_2.jpg"
+                    alt="Разработки для мобильного телефона"
+                  />
+                </picture>
+
                 <div class="development__box">
                   <p class="development__text">Мобильные приложения</p>
                 </div>
@@ -232,11 +243,15 @@
             </li>
             <li class="development-list__item">
               <div class="dev-item-container">
-                <img
-                  src="./images/box_3.jpg"
-                  alt="Настройка гаджетов"
-                  scrset="./images/box_3.jpg 1x, ./images/box_3_2x.jpg 2x"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box_3.jpg 1x, ./images/box_3_2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./images/box_3.jpg" alt="Настройка гаджетов" />
+                </picture>
+
                 <div class="development__box">
                   <p class="development__text">Дизайнерские решения</p>
                 </div>
@@ -260,30 +275,31 @@
                   media="(min-width: 1200px)"
                 />
                 <source
-                  media="(min-width: 768px)"
                   srcset="
                     ./images/img_demianenko_354_374.jpg    1x,
                     ./images/img_demianenko_354_374_2x.jpg 2x
                   "
+                  media="(min-width: 768px)"
                 />
                 <source
-                  media="(min-width: 320px)"
                   srcset="
                     ./images/img_demianenko_450_460.jpg    1x,
                     ./images/img_demianenko_450_460_2x.jpg 2x
                   "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  srcset="
+                    ./images/img_demianenko_450_460.jpg 450w,
+                    ./images/img_demianenko_354_374.jpg 354w,
+                    ./images/img_demianenko_270_260.jpg 270w
+                  "
+                  src="./images/img_demianenko_450_460.jpg"
+                  alt="Фото Игоря Демьяненко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
               </picture>
-              <img
-                srcset="
-                  ./images/img_demianenko_450_460.jpg 450w,
-                  ./images/img_demianenko_354_374.jpg 354w,
-                  ./images/img_demianenko_270_260.jpg 270w
-                "
-                src="./images/img_demianenko_450_460.jpg"
-                alt="Фото Игоря Демьяненко"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+
               <div class="team__card">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -583,7 +599,7 @@
         <div class="container__item container-email">
           <p class="footer-cont-text">Подпишитесь на рассылку</p>
           <form class="form-input">
-            <label for="form-input__label"> </label>
+            <label for="item-mail"> </label>
             <input
               type="email"
               class="form-input__item"
