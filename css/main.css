@@ -485,7 +485,6 @@ ul {
 
 .hero {
   background-color: var(--dark-backg-color);
-  max-width: 480px;
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
@@ -503,7 +502,6 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768_400.jpg");
   }
 }
@@ -542,6 +540,16 @@ ul {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36364;
+    letter-spacing: 0.06em;
+  }
 }
 
 .btn__hero {
@@ -605,6 +613,13 @@ ul {
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list__title {
+    text-align: start;
+  }
 }
 
 .advantage-list__text {
@@ -1078,7 +1093,7 @@ ul {
   margin-left: 8px;
 }
 
-.filter__item:not(:last-child) {
+.filter__item:not(:nth-last-child(-n + 2)) {
   margin-bottom: 15px;
 }
 

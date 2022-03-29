@@ -44,6 +44,10 @@
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  text-align: center;
+  @include media($tab) {
+    text-align: start;
+  }
 }
 
 .advantage-list__text {
