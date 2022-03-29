@@ -826,6 +826,7 @@ ul {
 
 .footer {
   background-color: var(--dark-backg-color);
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -839,8 +840,11 @@ ul {
 }
 
 .container__item {
-  padding-top: 60px;
   text-align: center;
+}
+
+.container__item:not(:last-child) {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -852,6 +856,9 @@ ul {
 @media screen and (min-width: 1200px) {
   .container__item {
     text-align: left;
+  }
+  .container__item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 

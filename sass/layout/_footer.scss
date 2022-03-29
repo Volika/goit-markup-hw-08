@@ -1,5 +1,6 @@
 .footer {
   background-color: var(--dark-backg-color);
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .container--flex {
@@ -12,8 +13,10 @@
 }
 
 .container__item {
-  padding-top: 60px;
   text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
   @include media($tab) {
     width: 50%;
   }
@@ -22,6 +25,9 @@
   //   margin-right: auto;
   // }
   @include media($desk) {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
     text-align: left;
   }
 }
