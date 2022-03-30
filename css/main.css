@@ -1087,7 +1087,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: -8px;
   margin-bottom: 40px;
 }
 
@@ -1104,8 +1103,8 @@ ul {
   }
 }
 
-.filter__item {
-  margin-left: 8px;
+.filter__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter__item:not(:nth-last-child(-n + 2)) {
